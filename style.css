@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+  }
+  
+  header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+  }
+  
+  header .logo img {
+    height: 60px; /* Black logo size */
+    max-width: 100%;
+  }
+  
+  header .contact-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    right: 20px;
+  }
+  
+  header .contact-btn:hover {
+    background-color: #333;
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    text-align: center;
+    margin: 50px 0;
+    padding: 30px;
+    border: 2px solid black;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-section h1 {
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .welcome-section p {
+    font-size: 1.2rem;
+    color: gray;
+  }
+  
+  .interactive-box {
+    display: inline-block;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+    border: 2px solid black; /* Border for the box */
+  }
+  
+  /* Contact Section */
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .contact-box {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    width: auto;
+    max-width: 400px;
+  }
+  
+  .contact-box h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .contact-details p,
+  .contact-details a {
+    font-size: 0.9rem;
+    color: black;
+    line-height: 1.5;
+  }
+  
+  .contact-details a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-details .icon {
+    margin-right: 8px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 8px;
+    width: 80%;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+  
+  .interactive-button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .interactive-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid black;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer .footer-logo img {
+    height: 300px;
+    max-width: 100%;
+  }
+  
+  footer .footer-links a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  footer .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    header .logo img {
+      height: 50px; /* Reduced logo size for smaller screens */
+    }
+  
+    .contact-btn {
+      position: relative;
+      right: 0;
+      margin-top: 10px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 0.9rem;
+    }
+  
+    footer .footer-content {
+      flex-direction: column;
+    }
+  
+    footer .footer-logo img {
+      height: 50px; /* Adjust footer logo size on small screens */
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    header .logo img {
+      height: 40px; /* Smaller logo for mobile screens */
+    }
+  
+    footer .footer-logo img {
+      height: 40px; /* Adjust footer logo size on mobile screens */
+    }
+  }
+  
